@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Turismo Bolivia — Chuquisaca</title>
+  <meta name="description" content="Descubre Chuquisaca: historia, arquitectura colonial y paisajes naturales.">
+ <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --pad:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:linear-gradient(180deg,#fef2f2 0%, red 80%); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(238, 113, 113, 0.6); border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}
+    .container{max-width:1100px; margin:0 auto; padding:20px;}
+    .nav{display:flex; align-items:center; justify-content:space-between;}
+    .brand{font-weight:800; letter-spacing:-0.4px}
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}
+    .hero{display:grid; grid-template-columns:1fr; gap:18px; padding:44px 20px; border-radius:14px; background:linear-gradient(135deg, rgba(185,28,28,0.06), rgba(185,28,28,0.02));}
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}
+    .hero p{margin:0; color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}
+    .card{background:#f77a7a; border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}
+    .card img{width:100%; height:200px; object-fit:cover; display:block}
+    .card-body{padding:14px}
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}
+    @media(min-width:720px){
+      .hero{grid-template-columns:1fr 480px; padding:48px}
+      .gallery{grid-template-columns:repeat(4,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="brand">Chuquisaca</div>
+        <div style="font-size:13px;color:var(--muted)">Histórica · Colonial · Cultural</div>
+      </div>
+      <nav>
+        <a href="#lugares">Lugares</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" style="padding-bottom:28px">
+    <section class="hero" aria-labelledby="hero-title-chuquisaca">
+      <div>
+        <h1 id="hero-title-chuquisaca">Chuquisaca: el corazón histórico de Bolivia</h1>
+        <p>El departamento de Chuquisaca, ubicado en el centro-sur de Bolivia, es reconocido por su capital Sucre, ciudad blanca de arquitectura colonial y cuna de la independencia del país. Entre sus montañas, valles fértiles y pueblos coloniales, Chuquisaca guarda siglos de historia, cultura viva y una gran riqueza natural que invita a ser descubierta.</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="#lugares">Ver lugares</a>
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>
+        </div>
+      </div>
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">
+        <img src="img/CHUQUISACA.jpg" alt="Vista de Sucre" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">
+      </div>
+    </section>
+<section id="lugares" style="margin-top:40px">
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y bellos de Chuquisaca.</p>
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">
+    <article class="card lugar" aria-label="Casa de la Libertad">
+      <img src="img/CASA_LIBERTAD.jpg" alt="Casa de la Libertad">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Casa de la Libertad</h3>
+        <p style="margin:6px 0;color:var(--muted)">Ubicada en la Plaza 25 de Mayo de Sucre, la Casa de la Libertad es el lugar donde se firmó el Acta de Independencia de Bolivia en 1825. Es uno de los monumentos históricos más importantes del país y alberga un museo que conserva documentos y objetos de la época colonial.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Parque Cretácico de Sucre">
+      <img src="img/CRETACICO.jpg" alt="Parque Cretácico de Sucre">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Parque Cretácico</h3>
+        <p style="margin:6px 0;color:var(--muted)">El Parque Cretácico es un sitio paleontológico mundialmente conocido por sus huellas de dinosaurios, las más grandes y mejor conservadas del planeta. Ofrece réplicas a tamaño real de dinosaurios y una vista impresionante del farallón de Cal Orck’o.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Tarabuco">
+      <img src="img/TARABUCO.jpg" alt="Tarabuco">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Tarabuco</h3>
+        <p style="margin:6px 0;color:var(--muted)">Tarabuco es un pueblo famoso por su feria dominical y sus tejidos tradicionales, símbolo de la identidad yampara. Sus habitantes conservan su vestimenta, idioma y costumbres ancestrales, ofreciendo una experiencia cultural única.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Maragua">
+      <img src="img/MARAGUA.jpg" alt="Maragua">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cráter de Maragua</h3>
+        <p style="margin:6px 0;color:var(--muted)">El cráter de Maragua es una formación geológica natural en forma de espiral, rodeada de montañas multicolores. Es uno de los paisajes más impresionantes de Chuquisaca y hogar de comunidades rurales que mantienen vivas sus tradiciones.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Yotala">
+      <img src="img/YOTALA.jpg" alt="Yotala">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Yotala</h3>
+        <p style="margin:6px 0;color:var(--muted)">Yotala es un pueblo colonial ubicado a pocos kilómetros de Sucre. Sus calles empedradas, casas blancas y paisajes de valle lo convierten en un destino ideal para el descanso y la gastronomía tradicional.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Cascadas de Cachimayu">
+      <img src="img/CACHIMAYU.png" alt="Cascadas de Cachimayu">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cascadas de Cachimayu</h3>
+        <p style="margin:6px 0;color:var(--muted)">Las cascadas de Cachimayu son un atractivo natural muy visitado por su belleza y cercanía a la ciudad. En ellas se puede disfrutar de caminatas, baños naturales y picnic en medio de la naturaleza.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<div class="card" style="padding:16px">
+  <h3 style="margin:0 0 8px">Consejos para visitar Chuquisaca</h3>
+  <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">
+    <li>Visita Sucre entre abril y septiembre para disfrutar de un clima templado y seco.</li>
+    <li>Usa calzado cómodo para recorrer las calles empedradas y los miradores.</li>
+    <li>Prueba la gastronomía local: chorizos chuquisaqueños, mondongo y empanadas.</li>
+    <li>Respeta los sitios históricos y no tomes fotos en áreas restringidas.</li>
+    <li>Si visitas pueblos rurales, sé respetuoso con las tradiciones locales y pide permiso antes de fotografiar personas.</li>
+  </ul>
+</div>
+<section id="galeria" style="margin-top:28px">
+  <h3 style="margin:0 0 6px">Galería</h3>
+  <p style="margin:0 0 12px;color:var(--muted)">Paisajes y monumentos de Chuquisaca.</p>
+  <div class="gallery" style="margin-top:8px">
+    <img src="img/CASA_LIBERTAD.jpg" alt="Casa de la Libertad">
+    <img src="img/CRETACICO.jpg" alt="Parque Cretácico">
+    <img src="img/TARABUCO.jpg" alt="Tarabuco">
+    <img src="img/MARAGUA.jpg" alt="Cráter de Maragua">
+    <img src="img/YOTALA.jpg" alt="Yotala">
+    <img src="img/CACHIMAYU.png" alt="Cascadas de Cachimayu">
+  </div>
+</section>
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+    <small>© <span id="year-chuquisaca"></span> Turismo Chuquisaca — Historia y cultura</small>
+    <div style="display:flex;gap:12px;margin-top:8px">
+      <a href="#" aria-label="Términos">Términos</a>
+      <a href="#" aria-label="Privacidad">Privacidad</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

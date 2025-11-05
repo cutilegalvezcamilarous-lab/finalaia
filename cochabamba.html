@@ -1,0 +1,154 @@
+<!doctype html>          
+<html lang="es">          
+<head>          
+  <meta charset="utf-8" />          
+  <meta name="viewport" content="width=device-width,initial-scale=1" />          
+  <title>Turismo Bolivia — Cochabamba</title>          
+  <meta name="description" content="Descubre Cochabamba: historia, cultura y paisajes naturales.">          
+  <link rel="preconnect" href="https://fonts.googleapis.com">          
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">          
+  <style>          
+    :root{          
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba blue;          
+      --radius:14px; --pad:18px;          
+    }          
+    *{box-sizing:border-box}          
+    body{          
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;          
+      background:linear-gradient(rgb(0, 162, 255) 0%, blue 70%); color:#0f172a;          
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;          
+    }          
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba blue; border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}          
+    .container{max-width:1100px; margin:0 auto; padding:20px;}          
+    .nav{display:flex; align-items:center; justify-content:space-between;}          
+    .brand{font-weight:800; letter-spacing:-0.4px}          
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}          
+    .hero{display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+    padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(blue, rgb(87, 87, 214));}          
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}          
+    .hero p{margin:0; color:var(--muted)}          
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}          
+    .card{background:rgb(86, 175, 226); border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}          
+    .card img{width:100%; height:200px; object-fit:cover; display:block}          
+    .card-body{padding:14px}          
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}          
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}          
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}          
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}          
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}          
+    @media(min-width:720px){          
+      .hero{grid-template-columns:1fr 480px; padding:48px}          
+      .gallery{grid-template-columns:repeat(4,1fr)}          
+    }          
+  </style>          
+</head>          
+<body>          
+  <header>          
+    <div class="container nav">          
+      <div style="display:flex;align-items:center;gap:12px">          
+        <div class="brand">Cochabamba</div>          
+        <div style="font-size:13px;color:var(--muted)">Valle · Cultural · Tradicional</div>          
+      </div>          
+      <nav>          
+        <a href="#lugares">Lugares</a>          
+        <a href="#consejos">Consejos</a>          
+        <a href="#galeria">Galería</a>          
+      </nav>          
+    </div>          
+  </header>               
+  <main class="container" style="padding-bottom:28px">          
+    <section class="hero" aria-labelledby="hero-title-cochabamba">          
+      <div>          
+        <h1 id="hero-title-cochabamba">Cochabamba: corazón del valle boliviano</h1>          
+        <p>El departamento de Cochabamba, situado en el centro de Bolivia, es conocido por su clima templado, su rica historia y sus paisajes montañosos. La región combina tradición cultural con modernos atractivos turísticos, desde mercados típicos hasta majestuosos valles y parques naturales. Cochabamba es también famosa por su gastronomía y festividades que reflejan la identidad boliviana.</p>          
+        <div style="margin-top:12px">          
+          <a class="btn" href="#lugares">Ver lugares</a>          
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>          
+        </div>          
+      </div>          
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">          
+        <img src="img/COCHBAMBA.jpg" alt="Vista de Cochabamba" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">          
+      </div>          
+    </section>          
+<section id="lugares" style="margin-top:40px">          
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>          
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y bellos de Cochabamba.</p>          
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">                    
+    <article class="card lugar" aria-label="Cristo de la Concordia">          
+      <img src="img/COCHBAMBA.jpg" alt="Cristo de la Concordia">          
+      <div class="card-body">          
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cristo de la Concordia</h3>          
+        <p style="margin:6px 0;color:var(--muted)">El Cristo de la Concordia es una estatua monumental situada en la ciudad de Cochabamba, considerada una de las más altas del mundo. Ofrece vistas panorámicas de la ciudad y los valles circundantes, siendo un ícono turístico y religioso de la región.</p>          
+      </div>          
+    </article>             
+    <article class="card lugar" aria-label="Laguna Alalay">          
+      <img src="img/ALALAY.jpg" alt="Laguna Alalay">          
+      <div class="card-body">          
+        <h3 style="margin:0;font-size:20px;font-weight:700">Laguna Alalay</h3>          
+        <p style="margin:6px 0;color:var(--muted)">La Laguna Alalay es un espacio natural en el corazón de Cochabamba, ideal para caminatas, deportes y observación de aves. Rodeada de áreas verdes, es un lugar de esparcimiento muy popular entre locales y turistas.</p>          
+      </div>          
+    </article>          
+    <article class="card lugar" aria-label="Sajama">          
+      <img src="img/SAGUAYA.jpg" alt="Sajama">          
+      <div class="card-body">          
+        <h3 style="margin:0;font-size:20px;font-weight:700">Parque Tunari</h3>          
+        <p style="margin:6px 0;color:var(--muted)">El Parque Nacional Tunari protege ecosistemas de montaña y valles, ofreciendo rutas de senderismo, miradores y contacto directo con la flora y fauna autóctona de Cochabamba.</p>          
+      </div>          
+    </article>          
+    <article class="card lugar" aria-label="Plaza 14 de Septiembre">          
+      <img src="img/PLAZ.jpg" alt="Plaza 14 de Septiembre">          
+      <div class="card-body">          
+        <h3 style="margin:0;font-size:20px;font-weight:700">Plaza 14 de Septiembre</h3>          
+        <p style="margin:6px 0;color:var(--muted)">Es la plaza principal de la ciudad de Cochabamba, rodeada de edificios históricos, la catedral y restaurantes típicos. Es un punto de encuentro cultural y social muy visitado.</p>          
+      </div>          
+    </article>                   
+    <article class="card lugar" aria-label="Convento de Santa Teresa">          
+      <img src="img/CONVENTO.jpg" alt="Convento de Santa Teresa">          
+      <div class="card-body">          
+        <h3 style="margin:0;font-size:20px;font-weight:700">Convento de Santa Teresa</h3>          
+        <p style="margin:6px 0;color:var(--muted)">Un convento histórico y religioso que muestra la arquitectura colonial y la vida monástica tradicional. Es un sitio de interés cultural y turístico de Cochabamba.</p>          
+      </div>          
+    </article>                   
+    <article class="card lugar" aria-label="Mercado La Cancha">          
+      <img src="img/CANCHA.jpg" alt="Mercado La Cancha">          
+      <div class="card-body">          
+        <h3 style="margin:0;font-size:20px;font-weight:700">Mercado La Cancha</h3>          
+        <p style="margin:6px 0;color:var(--muted)">El mercado más grande de Cochabamba, donde se puede encontrar desde alimentos frescos hasta artesanías y productos locales. Es un lugar imprescindible para conocer la vida cotidiana y cultura local.</p>          
+      </div>          
+    </article>          
+  </div>          
+</section>          
+<div class="card" style="padding:16px">          
+    <h3 style="margin:0 0 8px">Consejos para visitar Cochabamba</h3>          
+    <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">          
+      <li>Usa ropa ligera y cómoda, pero lleva una chaqueta para zonas altas y noches frescas.</li>          
+      <li>Prueba la gastronomía local, especialmente el famoso plato “silpancho”.</li>          
+      <li>Respeta las normas y tradiciones de los lugares históricos y religiosos.</li>          
+      <li>Lleva protector solar y suficiente agua, sobre todo si visitas parques y senderos.</li>          
+      <li>Planifica tus recorridos por la ciudad para evitar horas de tráfico intenso.</li>          
+    </ul>          
+  </div>          
+</section>         
+    <section id="galeria" style="margin-top:28px">          
+      <h3 style="margin:0 0 6px">Galería</h3>          
+      <p style="margin:0 0 12px;color:var(--muted)">Paisajes y monumentos de Cochabamba.</p>          
+      <div class="gallery" style="margin-top:8px">          
+        <img src="img/COCHBAMBA.jpg" alt="Cristo de la Concordia">          
+        <img src="img/ALALAY.jpg" alt="Laguna Alalay">          
+        <img src="img/SAGUAYA.jpg" alt="Parque Tunari">          
+        <img src="img/PLAZ.jpg" alt="Plaza 14 de Septiembre">          
+        <img src="img/CONVENTO.jpg" alt="Convento de Santa Teresa">          
+        <img src="img/CANCHA.jpg" alt="Mercado La Cancha">          
+      </div>          
+    </section>                
+  <footer>          
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">          
+      <small>© <span id="year-cochabamba"></span> Turismo Cochabamba — Historia y naturaleza</small>          
+      <div style="display:flex;gap:12px;margin-top:8px">          
+        <a href="#" aria-label="Términos">Términos</a>          
+        <a href="#" aria-label="Privacidad">Privacidad</a>          
+      </div>          
+    </div>          
+  </footer>                   
+</body>          
+</html>

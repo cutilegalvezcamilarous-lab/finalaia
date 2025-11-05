@@ -1,0 +1,144 @@
+<!doctype html>      
+<html lang="es">      
+<head>      
+  <meta charset="utf-8" />      
+  <meta name="viewport" content="width=device-width,initial-scale=1" />      
+  <title>Turismo Bolivia — Pando</title>      
+  <meta name="description" content="Descubre Pando: naturaleza amazónica, cultura y tranquilidad tropical.">      
+  <style>      
+    :root{      
+      --bg:#f7fafc; --card:#ffffff; --accent:#15803d; --muted:#6b7280; --glass: rgba#007849;      
+      --radius:14px; --pad:18px;      
+    }      
+    *{box-sizing:border-box}      
+    body{      
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;      
+      background:linear-gradient(#ecfdf5 0%, #007849 60%); color:#0f172a;      
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;      
+    }      
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba #007849; border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}      
+    .container{max-width:1100px; margin:0 auto; padding:20px;}      
+    .nav{display:flex; align-items:center; justify-content:space-between;}      
+    .brand{font-weight:800; letter-spacing:-0.4px}      
+    nav a{margin-left:14px; font-weight:600; color:#166534}      
+    .hero{display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+      padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(white, #007849);}      
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}      
+    .hero p{margin:0; color:var(--muted)}      
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}      
+    .card{background:#67d6ac; border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}      
+    .card img{width:100%; height:200px; object-fit:cover; display:block}      
+    .card-body{padding:14px}      
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}      
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}      
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}      
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}      
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}      
+    @media(min-width:720px){      
+      .hero{grid-template-columns:1fr 480px; padding:48px}      
+      .gallery{grid-template-columns:repeat(4,1fr)}      
+    }      
+  </style>      
+</head>      
+<body>      
+  <header>      
+    <div class="container nav">      
+      <div style="display:flex;align-items:center;gap:12px">      
+        <div class="brand">Pando</div>      
+        <div style="font-size:13px;color:var(--muted)">Verde · Amazónico · Tranquilo</div>      
+      </div>      
+      <nav>      
+        <a href="#lugares">Lugares</a>      
+        <a href="#consejos">Consejos</a>      
+        <a href="#galeria">Galería</a>      
+      </nav>      
+    </div>      
+  </header>         
+  <main class="container" style="padding-bottom:28px">           
+    <section class="hero" aria-labelledby="hero-title-pando">      
+      <div>      
+        <h1 id="hero-title-pando">Pando: naturaleza virgen y esencia amazónica</h1>      
+        <p>El departamento de Pando, situado en el extremo norte de Bolivia, es el corazón verde de la Amazonía boliviana. Su naturaleza exuberante, ríos navegables y selvas tropicales intactas ofrecen una experiencia única de conexión con la biodiversidad y la tranquilidad del entorno natural. Cobija, su capital, es una ciudad cálida, acogedora y rodeada de belleza natural.</p>      
+        <div style="margin-top:12px">      
+          <a class="btn" href="#lugares">Ver lugares</a>      
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>      
+        </div>      
+      </div>      
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">      
+        <img src="img/PANDO.jpg" alt="Selva de Pando" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">      
+      </div>      
+    </section>      
+<section id="lugares" style="margin-top:40px">      
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>      
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más representativos de Pando.</p>      
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">            
+    <article class="card lugar" aria-label="Cobija">      
+      <img src="img/COBIJA.jpg" alt="Cobija">      
+      <div class="card-body">      
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cobija</h3>      
+        <p style="margin:6px 0;color:var(--muted)">Cobija es la capital de Pando, una ciudad moderna rodeada de selva tropical y atravesada por el río Acre. Es un punto estratégico de comercio fronterizo con Brasil y un excelente destino para quienes buscan tranquilidad, naturaleza y cultura amazónica.</p>      
+      </div>      
+    </article>            
+    <article class="card lugar" aria-label="Río Acre">      
+      <img src="img/ACRE.jpg" alt="Río Acre">      
+      <div class="card-body">      
+        <h3 style="margin:0;font-size:20px;font-weight:700">Río Acre</h3>      
+        <p style="margin:6px 0;color:var(--muted)">El río Acre es uno de los principales afluentes de la región. En sus orillas se puede disfrutar de paseos en bote, pesca artesanal y vistas impresionantes del paisaje selvático que marca la frontera natural entre Bolivia y Brasil.</p>      
+      </div>      
+    </article>           
+    <article class="card lugar" aria-label="Puerto Rico">      
+      <img src="img/PUERTORICO.jpg" alt="Puerto Rico">      
+      <div class="card-body">      
+        <h3 style="margin:0;font-size:20px;font-weight:700">Puerto Rico</h3>      
+        <p style="margin:6px 0;color:var(--muted)">Puerto Rico es una encantadora localidad ribereña, famosa por sus paisajes naturales, su producción de cacao y su cercanía con el río Manuripi. Es ideal para realizar caminatas ecológicas y observar fauna silvestre.</p>      
+      </div>      
+    </article>            
+    <article class="card lugar" aria-label="Reserva Manuripi">      
+      <img src="img/MANURIPI.jpg" alt="Reserva Manuripi">      
+      <div class="card-body">      
+        <h3 style="margin:0;font-size:20px;font-weight:700">Reserva de Vida Silvestre Manuripi</h3>      
+        <p style="margin:6px 0;color:var(--muted)">La Reserva Manuripi es un área protegida de más de 700.000 hectáreas que alberga una impresionante diversidad de flora y fauna amazónica. Es un destino ideal para el ecoturismo, la observación de aves y la convivencia con comunidades locales.</p>      
+      </div>      
+    </article>            
+    <article class="card lugar" aria-label="Porvenir">      
+      <img src="img/PORVENIR.jpg" alt="Porvenir">      
+      <div class="card-body">      
+        <h3 style="margin:0;font-size:20px;font-weight:700">Porvenir</h3>      
+        <p style="margin:6px 0;color:var(--muted)">Porvenir es una pequeña población cercana a Cobija, conocida por su puente internacional sobre el río Tahuamanu y su ambiente tranquilo. Es un lugar ideal para conocer la vida cotidiana pandina y disfrutar de la gastronomía local.</p>      
+      </div>      
+    </article>      
+  </div>      
+</section>      
+<div class="card" style="padding:16px">      
+    <h3 style="margin:0 0 8px">Consejos para visitar Pando</h3>      
+    <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">      
+      <li>Visita entre mayo y septiembre, cuando el clima es más seco y los caminos están en mejor estado.</li>      
+      <li>Lleva ropa fresca, repelente y protector solar.</li>      
+      <li>Respeta la flora y fauna amazónica, evita dejar basura en áreas naturales.</li>      
+      <li>Si visitas comunidades locales, sé respetuoso con sus costumbres y tradiciones.</li>      
+      <li>Disfruta de los productos locales como el asaí, la castaña y el cacao pandino.</li>      
+    </ul>      
+  </div>      
+</section>            
+    <section id="galeria" style="margin-top:28px">      
+      <h3 style="margin:0 0 6px">Galería</h3>      
+      <p style="margin:0 0 12px;color:var(--muted)">Paisajes y lugares de Pando.</p>      
+      <div class="gallery" style="margin-top:8px">      
+        <img src="img/COBIJA.jpg" alt="Cobija">      
+        <img src="img/ACRE.jpg" alt="Río Acre">      
+        <img src="img/PUERTORICO.jpg" alt="Puerto Rico">      
+        <img src="img/MANURIPI.jpg" alt="Reserva Manuripi">      
+        <img src="img/PORVENIR.jpg" alt="Porvenir">      
+      </div>      
+    </section>       
+  <footer>      
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">      
+      <small>© <span id="year-pando"></span> Turismo Pando — Naturaleza y paz amazónica</small>      
+      <div style="display:flex;gap:12px;margin-top:8px">      
+        <a href="#" aria-label="Términos">Términos</a>      
+        <a href="#" aria-label="Privacidad">Privacidad</a>      
+      </div>      
+    </div>      
+  </footer>           
+</body>      
+</html>

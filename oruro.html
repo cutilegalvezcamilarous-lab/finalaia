@@ -1,0 +1,151 @@
+<!doctype html>    
+<html lang="es">    
+<head>    
+  <meta charset="utf-8" />    
+  <meta name="viewport" content="width=device-width,initial-scale=1" />    
+  <title>Turismo Bolivia — Oruro</title>    
+  <meta name="description" content="Descubre Oruro: carnaval, cultura minera y paisajes altiplánicos.">    
+  <style>    
+    :root{    
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);    
+      --radius:14px; --pad:18px;    
+    }    
+    *{box-sizing:border-box}    
+    body{    
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;    
+      background:#b22222; color:#0f172a;    
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;    
+    }    
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(248, 112, 112, 0.6); border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}    
+    .container{max-width:1100px; margin:0 auto; padding:20px;}    
+    .nav{display:flex; align-items:center; justify-content:space-between;}    
+    .brand{font-weight:800; letter-spacing:-0.4px}    
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}    
+    .hero{  display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+      padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(#8a3c3c, #993e3e);}    
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}    
+    .hero p{margin:0; color:var(--muted)}    
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}    
+    .card{background:rgb(168, 51, 51); border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}    
+    .card img{width:100%; height:200px; object-fit:cover; display:block}    
+    .card-body{padding:14px}    
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}    
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}    
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}    
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}    
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}    
+    @media(min-width:720px){    
+      .hero{grid-template-columns:1fr 480px; padding:48px}    
+      .gallery{grid-template-columns:repeat(4,1fr)}    
+    }    
+  </style>    
+</head>    
+<body>    
+  <header>    
+    <div class="container nav">    
+      <div style="display:flex;align-items:center;gap:12px">    
+        <div class="brand">Oruro</div>    
+        <div style="font-size:13px;color:var(--muted)">Minería · Cultura · Carnaval</div>    
+      </div>    
+      <nav>    
+        <a href="#lugares">Lugares</a>    
+        <a href="#consejos">Consejos</a>    
+        <a href="#galeria">Galería</a>    
+      </nav>    
+    </div>    
+  </header>        
+  <main class="container" style="padding-bottom:28px">       
+    <section class="hero" aria-labelledby="hero-title-oruro">    
+      <div>    
+        <h1 id="hero-title-oruro">Oruro: corazón minero y cuna del Carnaval</h1>    
+        <p>El departamento de Oruro, situado en el altiplano boliviano, es reconocido por su rica herencia minera y su impresionante Carnaval, declarado Patrimonio Oral e Intangible de la Humanidad por la UNESCO. Entre montañas y lagos sagrados, Oruro combina devoción, tradición y arte en una de las expresiones culturales más vibrantes del país.</p>    
+        <div style="margin-top:12px">    
+          <a class="btn" href="#lugares">Ver lugares</a>    
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>    
+        </div>    
+      </div>    
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">    
+        <img src="img/ORURO.jpg" alt="Carnaval de Oruro" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">    
+      </div>    
+    </section>     
+<section id="lugares" style="margin-top:40px">    
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>    
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos de Oruro.</p>    
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">        
+    <article class="card lugar" aria-label="Santuario del Socavón">    
+      <img src="img/SOCAVON.jpg" alt="Santuario del Socavón">    
+      <div class="card-body">    
+        <h3 style="margin:0;font-size:20px;font-weight:700">Santuario del Socavón</h3>    
+        <p style="margin:6px 0;color:var(--muted)">El Santuario de la Virgen del Socavón es el corazón espiritual del Carnaval de Oruro. Construido sobre una antigua mina, simboliza la unión entre la fe católica y las creencias andinas en la Pachamama y el Tío de la mina.</p>    
+      </div>   
+    </article>       
+    <article class="card lugar" aria-label="Carnaval de Oruro">    
+      <img src="img/CARNAVAL.jpg" alt="Carnaval de Oruro">    
+      <div class="card-body">    
+        <h3 style="margin:0;font-size:20px;font-weight:700">Carnaval de Oruro</h3>    
+        <p style="margin:6px 0;color:var(--muted)">El Carnaval de Oruro es una de las manifestaciones folclóricas más importantes del mundo. Cada año, miles de danzarines recorren las calles en honor a la Virgen del Socavón, mostrando danzas tradicionales como la Diablada, Morenada y Caporales.</p>    
+      </div>    
+    </article>       
+    <article class="card lugar" aria-label="Lago Uru Uru">    
+      <img src="img/URUURU.jpg" alt="Lago Uru Uru">    
+      <div class="card-body">    
+        <h3 style="margin:0;font-size:20px;font-weight:700">Lago Uru Uru</h3>    
+        <p style="margin:6px 0;color:var(--muted)">Ubicado cerca de la ciudad de Oruro, el lago Uru Uru es un importante ecosistema altiplánico que alberga aves andinas como los flamencos rosados. Es ideal para la observación de fauna y la fotografía natural.</p>    
+      </div>    
+    </article>       
+    <article class="card lugar" aria-label="Museo Minero del Socavón">    
+      <img src="img/MUSEO.jpg" alt="Museo Minero del Socavón">    
+      <div class="card-body">    
+        <h3 style="margin:0;font-size:20px;font-weight:700">Museo Minero del Socavón</h3>    
+        <p style="margin:6px 0;color:var(--muted)">Ubicado bajo el santuario, este museo reproduce una mina real con galerías y herramientas utilizadas por los mineros orureños, mostrando la dureza y la historia del trabajo minero.</p>    
+      </div>    
+    </article>       
+    <article class="card lugar" aria-label="Salar de Coipasa">    
+      <img src="img/COIPASA.jpg" alt="Salar de Coipasa">    
+      <div class="card-body">    
+        <h3 style="margin:0;font-size:20px;font-weight:700">Salar de Coipasa</h3>    
+        <p style="margin:6px 0;color:var(--muted)">El Salar de Coipasa, compartido con el departamento de Potosí, es una maravilla natural de sal y agua que ofrece paisajes únicos y cielos reflejantes similares al Salar de Uyuni, pero menos concurrido.</p>    
+      </div>    
+    </article>       
+    <article class="card lugar" aria-label="Challapata">    
+      <img src="img/CHALLAPATA.jpg" alt="Challapata">    
+      <div class="card-body">    
+        <h3 style="margin:0;font-size:20px;font-weight:700">Challapata</h3>    
+        <p style="margin:6px 0;color:var(--muted)">Challapata es una localidad tradicional donde se celebra la Feria de la Alasita y se encuentra cerca de hermosos paisajes montañosos y ruinas precolombinas.</p>    
+      </div>    
+    </article>    
+  </div>    
+</section>       
+<div class="card" style="padding:16px" id="consejos">    
+    <h3 style="margin:0 0 8px">Consejos para visitar Oruro</h3>    
+    <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">    
+      <li>Lleva ropa abrigada, ya que el clima del altiplano es frío, especialmente de noche.</li>    
+      <li>Durante el Carnaval, reserva hospedaje con anticipación debido a la alta demanda.</li>    
+      <li>Si visitas minas o el museo, usa casco y sigue las medidas de seguridad.</li>    
+      <li>Hidrátate bien, el aire seco de la altura puede causar malestar.</li>    
+      <li>Respeta las tradiciones locales y evita interrumpir las danzas religiosas.</li>    
+    </ul>    
+  </div>        
+<section id="galeria" style="margin-top:28px">    
+  <h3 style="margin:0 0 6px">Galería</h3>    
+  <p style="margin:0 0 12px;color:var(--muted)">Paisajes y tradiciones de Oruro.</p>    
+  <div class="gallery" style="margin-top:8px">    
+    <img src="img/SOCAVON.jpg" alt="Santuario del Socavón">    
+    <img src="img/CARNAVAL.jpg" alt="Carnaval de Oruro">    
+    <img src="img/URUURU.jpg" alt="Lago Uru Uru">    
+    <img src="img/MUSEO.jpg" alt="Museo Minero del Socavón">    
+    <img src="img/COIPASA.jpg" alt="Salar de Coipasa">    
+    <img src="img/CHALLAPATA.jpg" alt="Challapata">    
+  </div>    
+</section>    
+  <footer>    
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">    
+      <small>© <span id="year-oruro"></span> Turismo Oruro — Cultura y tradición</small>    
+      <div style="display:flex;gap:12px;margin-top:8px">    
+        <a href="#" aria-label="Términos">Términos</a>    
+        <a href="#" aria-label="Privacidad">Privacidad</a>    
+      </div>    
+    </div>    
+  </footer>       
+</body>    
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>            
+<html lang="es">            
+<head>            
+  <meta charset="utf-8" />            
+  <meta name="viewport" content="width=device-width,initial-scale=1" />            
+  <title>Turismo Bolivia — Tarija</title>            
+  <meta name="description" content="Descubre Tarija: viñedos, historia colonial y paisajes montañosos.">                   
+  <style>            
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --pad:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:linear-gradient(180deg,#fef2f2 0%, red 80%); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(238, 113, 113, 0.6); border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}
+    .container{max-width:1100px; margin:0 auto; padding:20px;}
+    .nav{display:flex; align-items:center; justify-content:space-between;}
+    .brand{font-weight:800; letter-spacing:-0.4px}
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}
+    .hero{display:grid; grid-template-columns:1fr; gap:18px; padding:44px 20px; border-radius:14px; background:linear-gradient(135deg, rgba(185,28,28,0.06), rgba(185,28,28,0.02));}
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}
+    .hero p{margin:0; color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}
+    .card{background:#f77a7a; border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}
+    .card img{width:100%; height:200px; object-fit:cover; display:block}
+    .card-body{padding:14px}
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}
+    @media(min-width:720px){
+      .hero{grid-template-columns:1fr 480px; padding:48px}
+      .gallery{grid-template-columns:repeat(4,1fr)}
+    }            
+  </style>            
+</head>            
+<body>            
+  <header>            
+    <div class="container nav">            
+      <div style="display:flex;align-items:center;gap:12px">            
+        <div class="brand">Tarija</div>            
+        <div style="font-size:13px;color:var(--muted)">Viñedos · Cálido · Montañoso</div>            
+      </div>            
+      <nav>            
+        <a href="#lugares">Lugares</a>            
+        <a href="#consejos">Consejos</a>            
+        <a href="#galeria">Galería</a>            
+      </nav>            
+    </div>            
+  </header>                      
+  <main class="container" style="padding-bottom:28px">                       
+    <section class="hero" aria-labelledby="hero-title-tarija">            
+      <div>            
+        <h1 id="hero-title-tarija">Tarija: viñedos y paisajes andinos</h1>            
+        <p>El departamento de Tarija, ubicado al sur de Bolivia, es conocido por su clima cálido y sus fértiles valles. Esta región combina historia, cultura y naturaleza, destacando por sus viñedos, festivales tradicionales y paisajes montañosos. Tarija es un destino ideal para quienes buscan turismo enológico, gastronomía local y tranquilidad en un entorno natural.</p>            
+        <div style="margin-top:12px">            
+          <a class="btn" href="#lugares">Ver lugares</a>            
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>            
+        </div>            
+      </div>            
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">            
+        <img src="img/TARIJA.jpg" alt="Paisaje de Tarija" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">            
+      </div>            
+    </section>                        
+<section id="lugares" style="margin-top:40px">            
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>            
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y bellos de Tarija.</p>                       
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">                        
+    <article class="card lugar" aria-label="Viñedos de Tarija">            
+      <img src="img/VIÑEDOS.jpg" alt="Viñedos de Tarija">            
+      <div class="card-body">            
+        <h3 style="margin:0;font-size:20px;font-weight:700">Viñedos de Tarija</h3>            
+        <p style="margin:6px 0;color:var(--muted)">Tarija es famosa por sus viñedos y bodegas, donde se producen vinos y singanis de alta calidad. Los visitantes pueden recorrer las instalaciones, probar vinos locales y disfrutar de la belleza de los valles andinos.</p>            
+      </div>            
+    </article>                        
+    <article class="card lugar" aria-label="Plaza Luis de Fuentes y Vargas">            
+      <img src="img/PLA.jpg" alt="Plaza Luis de Fuentes y Vargas">            
+      <div class="card-body">            
+        <h3 style="margin:0;font-size:20px;font-weight:700">Plaza Luis de Fuentes y Vargas</h3>            
+        <p style="margin:6px 0;color:var(--muted)">Es la plaza principal de la ciudad de Tarija, rodeada de arquitectura colonial, cafés y tiendas locales. Un punto de encuentro ideal para conocer la cultura y disfrutar de eventos tradicionales.</p>            
+      </div>            
+    </article>                       
+    <article class="card lugar" aria-label="Sama Reserva Natural">            
+      <img src="img/SAMA.jpg" alt="Sama Reserva Natural">            
+      <div class="card-body">            
+        <h3 style="margin:0;font-size:20px;font-weight:700">Sama Reserva Natural</h3>            
+        <p style="margin:6px 0;color:var(--muted)">Ubicada cerca de la ciudad de Tarija, esta reserva protege bosques y fauna autóctona. Ideal para senderismo, observación de aves y disfrutar de la naturaleza.</p>            
+      </div>            
+    </article>                       
+    <article class="card lugar" aria-label="Cerro San Jacinto">            
+      <img src="img/JACINTO.jpg" alt="Cerro San Jacinto">            
+      <div class="card-body">            
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cerro San Jacinto</h3>            
+        <p style="margin:6px 0;color:var(--muted)">Un mirador natural que ofrece vistas panorámicas de la ciudad y los valles de Tarija. Es un sitio popular para caminatas y fotografía.</p>            
+      </div>            
+    </article>                       
+    <article class="card lugar" aria-label="Serranía de Sama">            
+      <img src="img/SERRANIA.jpg" alt="Serranía de Sama">            
+      <div class="card-body">            
+        <h3 style="margin:0;font-size:20px;font-weight:700">Serranía de Sama</h3>            
+        <p style="margin:6px 0;color:var(--muted)">Formaciones montañosas y valles que combinan flora y fauna autóctona. Es ideal para aventuras al aire libre y fotografía de paisaje.</p>            
+      </div>            
+    </article>            
+  </div>            
+</section>            
+<div class="card" style="padding:16px">            
+    <h3 style="margin:0 0 8px">Consejos para visitar Tarija</h3>            
+    <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">            
+      <li>Visita los viñedos con ropa cómoda y fresca, ideal para caminar al aire libre.</li>            
+      <li>Prueba la gastronomía local y respeta las tradiciones culturales.</li>            
+      <li>Protege tu piel del sol y mantente hidratado en los valles.</li>            
+      <li>Si visitas áreas naturales, sigue los senderos y cuida la flora y fauna.</li>            
+      <li>Planifica tu visita en festivales y eventos locales para una experiencia completa.</li>            
+    </ul>            
+  </div>            
+</section>                       
+    <section id="galeria" style="margin-top:28px">            
+      <h3 style="margin:0 0 6px">Galería</h3>            
+      <p style="margin:0 0 12px;color:var(--muted)">Paisajes y monumentos de Tarija.</p>            
+      <div class="gallery" style="margin-top:8px">            
+        <img src="img/VIÑEDOS.jpg" alt="Viñedos de Tarija">            
+        <img src="img/PLA.jpg" alt="Plaza Luis de Fuentes y Vargas">            
+        <img src="img/SAMA.jpg" alt="Sama Reserva Natural">            
+        <img src="img/JACINTO.jpg" alt="Cerro San Jacinto">            
+        <img src="img/SERRANIA.jpg" alt="Serranía de Sama">            
+      </div>            
+    </section>                   
+  <footer>            
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">            
+      <small>© <span id="year-tarija"></span> Turismo Tarija — Historia y naturaleza</small>            
+      <div style="display:flex;gap:12px;margin-top:8px">            
+        <a href="#" aria-label="Términos">Términos</a>            
+        <a href="#" aria-label="Privacidad">Privacidad</a>            
+      </div>            
+    </div>            
+  </footer>            
+  <script>            
+    document.getElementById('year-tarija').textContent = new Date().getFullYear();            
+  </script>            
+</body>            
+</html>

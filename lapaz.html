@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Turismo Bolivia — La Paz</title>
+  <meta name="description" content="Descubre Potosí: Cerro Rico, historia colonial y maravillas naturales.">
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --pad:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:linear-gradient(red 0%, #007849 70%); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(235, 108, 108, 0.6); border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}
+    .container{max-width:1100px; margin:0 auto; padding:20px;}
+    .nav{display:flex; align-items:center; justify-content:space-between;}
+    .brand{font-weight:800; letter-spacing:-0.4px}
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}
+    .hero{  display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+      padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(#d62828, #007849);}
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}
+    .hero p{margin:0; color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}
+    .card{background:rgb(189, 60, 60); border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}
+    .card img{width:100%; height:200px; object-fit:cover; display:block}
+    .card-body{padding:14px}
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}
+    @media(min-width:720px){
+      .hero{grid-template-columns:1fr 480px; padding:48px}
+      .gallery{grid-template-columns:repeat(4,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="brand">La Paz</div>
+        <div style="font-size:13px;color:var(--muted)">Historia · Diversa · Majestuosa</div>
+      </div>
+      <nav>
+        <a href="#lugares">Lugares</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" style="padding-bottom:28px">
+    <section class="hero" aria-labelledby="hero-title-potosi">
+      <div>
+        <h1 id="hero-title-potosi">La Paz: diversidad viva a más de 3.600 msnm</h1>
+        <p>La Paz es una ciudad fascinante ubicada en el altiplano andino de Bolivia. Es una de las sedes de gobierno del país (junto con Sucre, la capital constitucional) y alberga los principales poderes del Estado boliviano.</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="#lugares">Ver lugares</a>
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>
+        </div>
+      </div>
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">
+        <img src="img/LA PAZ.jpg" alt="Cerro Rico de Potosí" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">
+      </div>
+    </section>
+<section id="lugares" style="margin-top:40px">
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y bellos de La Paz.</p>
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">
+    <article class="card lugar" aria-label="Valle de la Luna">
+      <img src="img/VALLE.jpg" alt="Valle de la Luna">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Valle de la Luna</h3>
+        <p style="margin:6px 0;color:var(--muted)">El valle de la Luna es un área protegida municipal​ y formación geológica de la ciudad de La Paz, sede de gobierno de Bolivia. Se encuentra a unos 10 kilómetros del centro urbano de la ciudad y administrativamente pertenece al Macro distrito de Mallasa.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Tiwanaku">
+      <img src="img/PUERTA.jpg" alt="Tiwanaku">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Tiwanaku</h3>
+        <p style="margin:6px 0;color:var(--muted)">Tiwanaku, es un pequeño poblado y un municipio de Bolivia, ubicado en el Altiplano andino en la margen oriental del río Tiwanaku, a 15 km al sudeste del lago Titicaca y a 76 km de la ciudad de La Paz. Administrativamente forma parte de la provincia de Ingavi en el departamento de La Paz.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Muela del Diablo">
+      <img src="img/MUELA.jpg" alt="Muela del Diablo">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Muela del Diablo</h3>
+        <p style="margin:6px 0;color:var(--muted)">La Muela del Diablo, conocido localmente como Auki Kollo, ​ es una formación rocosa ubicada en el municipio de La Paz, Bolivia, a 3825 metros de altura. Se encuentra en la comunidad de Chiaraque, además de las zonas de Pedregal, Auquisamaña y Los Pinos.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Valle de las Ánimas">
+      <img src="img/AMINAS.jpg" alt="Valle de las Ánimas">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Valle de las Ánimas</h3>
+        <p style="margin:6px 0;color:var(--muted)">Es un área natural y turística en La Paz, Bolivia, conocida por sus formaciones rocosas de lodo y piedra que parecen agujas o torres. Estas estructuras se crearon por la erosión del agua, viento y el derretimiento de un glaciar hace millones de años. El nombre proviene de la creencia de que las imponentes formaciones rocosas eran "ánimas petrificadas". </p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Teleférico">
+      <img src="img/TELEFERICO.jpg" alt="Teleférico">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Teleférico</h3>
+        <p style="margin:6px 0;color:var(--muted)">Mi Teleférico es un sistema de transporte aéreo por cable que conecta La Paz y El Alto, Bolivia, descrito como el más largo y alto del mundo. Fue inaugurado en 2014 y actualmente cuenta con 10 líneas y 36 estaciones, facilitando el transporte diario, reduciendo tiempos de viaje y mitigando la contaminación, además de ser una importante atracción turística.  </p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Titicaca">
+      <img src="img/TITICACA.jpg" alt="Titicaca">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Titicaca</h3>
+        <p style="margin:6px 0;color:var(--muted)">El lago Titicaca se extiende por la frontera entre Perú y Bolivia en la cordillera de los Andes y es uno de los lagos más grandes de Sudamérica y el cuerpo de agua navegable más alto del mundo. Se dice que es la cuna de los incas y cuenta con varias ruinas. Sus aguas son conocidas por ser tranquilas y dar un reflejo brillante. </p>
+      </div>
+    </article>
+  </div>
+</section>
+<div class="card" style="padding:16px">
+    <h3 style="margin:0 0 8px">Consejos para visitar La Paz</h3>
+    <ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.6">
+      <li>La altitud (3.600 msnm) también puede afectar: evita esfuerzos los primeros días.</li>
+      <li>Usa protector solar: la radiación UV es alta a esta altitud.</li>
+      <li>Viste en capas: los cambios de temperatura entre el día y la noche son marcados.</li>
+      <li>Disfruta del sistema de teleférico para moverte de forma rápida y con vistas increíbles.</li>
+      <li>Visita mercados y ferias con respeto por las tradiciones y culturas locales.</li>
+    </ul>
+  </div>
+</section>
+    <section id="galeria" style="margin-top:28px">
+      <h3 style="margin:0 0 6px">Galería</h3>
+      <p style="margin:0 0 12px;color:var(--muted)">Paisajes y monumentos de La Paz.</p>
+      <div class="gallery" style="margin-top:8px">
+        <img src="img/VALLE.jpg" alt="Valle de la Luna">
+        <img src="img/PUERTA.jpg" alt="Tiwanaku">
+        <img src="img/MUELA.jpg" alt="Muela del Diablo">
+        <img src="img/AMINAS.jpg" alt="Valle de las Ánimas">
+        <img src="img/TELEFERICO.jpg" alt="Teleférico">
+        <img src="img/TITICACA.jpg" alt="Titicaca">
+      </div>
+    </section>
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <small>© <span id="year-potosi"></span> Turismo La Paz — Historia y naturaleza</small>
+      <div style="display:flex;gap:12px;margin-top:8px">
+        <a href="#" aria-label="Términos">Términos</a>
+        <a href="#" aria-label="Privacidad">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

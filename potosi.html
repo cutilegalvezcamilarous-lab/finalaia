@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Turismo Bolivia — Potosí</title>
+  <meta name="description" content="Descubre Potosí: Cerro Rico, historia colonial y maravillas naturales.">
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --pad:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:linear-gradient(red 0%, rgba(255,255,255,0.6) 90%); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(238, 79, 79, 0.6); border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}
+    .container{max-width:1100px; margin:0 auto; padding:20px;}
+    .nav{display:flex; align-items:center; justify-content:space-between;}
+    .brand{font-weight:800; letter-spacing:-0.4px}
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}
+    .hero{  display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+      padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(#d62828, white);}
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}
+    .hero p{margin:0; color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}
+    .card{background:brown; border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}
+    .card img{width:100%; height:180px; object-fit:cover; display:block}
+    .card-body{padding:14px}
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}
+    @media(min-width:720px){
+      .hero{grid-template-columns:1fr 480px; padding:48px}
+      .gallery{grid-template-columns:repeat(4,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="brand">Potosí</div>
+        <div style="font-size:13px;color:var(--muted)">Historia · Plata · Altura</div>
+      </div>
+      <nav>
+        <a href="#lugares">Lugares</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" style="padding-bottom:28px">
+    <section class="hero" aria-labelledby="hero-title-potosi">
+      <div>
+        <h1 id="hero-title-potosi">Potosí: riqueza histórica a más de 4000 msnm</h1>
+        <p>Famosa por el Cerro Rico, Potosí fue uno de los centros mineros más importantes del mundo en la colonia. Hoy combina patrimonio histórico, cultura y paisajes únicos.</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="#lugares">Ver lugares</a>
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>
+        </div>
+      </div>
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">
+        <img src="img/POTOSI.jpg" alt="Cerro Rico de Potosí" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">
+      </div>
+    </section>
+<section id="lugares" style="margin-top:40px">
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y bellos de Potosí.</p>
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">
+    <article class="card lugar" aria-label="Cerro Rico">
+      <img src="img/CERRO.jpg" alt="Cerro Rico de Potosí">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cerro Rico</h3>
+        <p style="margin:6px 0;color:var(--muted)">El cerro Rico, conocido también como cerro de Potosí, es una montaña de los Andes ubicada en la ciudad de Potosí, Bolivia, o antigua Villa Imperial de Potosí, con una altitud aproximada de unos 4800 ms.n.m..</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Casa de la Moneda">
+      <img src="img/CASA.jpg" alt="Casa de la Moneda de Potosí">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Casa de la Moneda</h3>
+        <p style="margin:6px 0;color:var(--muted)">La Casa de la Moneda en Bolivia es un museo histórico y una joya arquitectónica ubicada en Potosí, que fue fundamental para la acuñación de monedas en América Latina durante la colonia.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Laguna Colorada">
+      <img src="img/LAGO.jpg" alt="Laguna Colorada">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Laguna Colorada</h3>
+        <p style="margin:6px 0;color:var(--muted)">La laguna Colorada es una laguna de Bolivia, ubicada en la región del Altiplano. Es un lugar de cría para los flamencos andinos, aves migratorias que se cuentan por miles en sus aguas ricas en minerales.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Salar de Uyuni">
+      <img src="img/SALAR.jpg" alt="Salar de Uyuni">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Salar de Uyuni</h3>
+        <p style="margin:6px 0;color:var(--muted)">El Salar de Uyuni, en medio de los Andes en el sur de Bolivia, es la salina más grande del mundo. Es el legado de un lago prehistórico que se secó y dejó un paisaje desértico de casi 11,000 km cuadrados de sal blanca brillante, formaciones rocosas e islas con cactus. Su mística extensión se puede observar desde la isla central Incahuasi.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Museo Santa Teresa">
+      <img src="img/TERESA.jpg" alt="Museo Santa Teresa">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Museo Santa Teresa</h3>
+        <p style="margin:6px 0;color:var(--muted)">El Museo Convento de Santa Teresa en Potosí es un importante museo de arte sacro ubicado en un antiguo convento carmelita descalzo fundado en 1685. Ofrece un recorrido por la vida monástica a través de celdas, claustros y la iglesia, que conserva retablos y pinturas de los siglos XVII y XVIII. Abierto en 1976, el museo permite conocer la arquitectura colonial, la vida de las monjas y la historia de la Orden de las Carmelitas Descalzas. </p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Parque nacional Toro Toro">
+      <img src="img/TORO_TORO.jpg" alt="Parque nacional Toro Toro">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Parque nacional Toro Toro</h3>
+        <p style="margin:6px 0;color:var(--muted)">El Parque nacional Toro Toro, a veces escrito Torotoro, es un área protegida de Bolivia ubicada en la provincia de Charcas, en el norte del departamento de Potosí. Tiene una superficie de 16.570 ha (165,70 km²) y fue creado el año 1989 mediante Decreto Supremo N° 22269[2]​ con el fin de conservar la flora y fauna silvestre de los valles interandinos así como sitios arqueológicos, paleontológicos y espeleológicos.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<section id="galeria" style="margin-top:28px">
+    <section id="consejos" style="margin-top:28px; display:grid; gap:18px; grid-template-columns:1fr;">
+      <div class="card" style="padding:16px">
+        <h3 style="margin:0 0 8px">Consejos para visitar Potosí</h3>
+        <ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.6">
+          <li>Debido a la altitud (más de 4000 msnm), hidrátate y descansa los primeros días.</li>
+          <li>No olvides ropa abrigada: el clima es frío gran parte del año.</li>
+          <li>Si visitas minas, hazlo siempre con guías autorizados y respeta las normas de seguridad.</li>
+        </ul>
+      </div>
+      <h3 style="margin:0 0 6px">Galería</h3>
+      <p style="margin:0 0 12px;color:var(--muted)">Paisajes y monumentos de Potosí.</p>
+      <div class="gallery" style="margin-top:8px">
+        <img src="img/CERRO.jpg" alt="Cerro Rico">
+        <img src="img/CASA.jpg" alt="Casa de la Moneda">
+        <img src="img/LAGO.jpg" alt="Laguna Colorada">
+        <img src="img/SALAR.jpg" alt="Salar de Uyuni">
+         <img src="img/TERESA.jpg" alt="Museo Santa Teresa">
+         <img src="img/TORO_TORO.jpg" alt="Parque nacional Toro Toro">
+    </section>
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <small>© <span id="year"></span> Turismo Bolivia — Turismo responsable</small>
+      <div style="display:flex;gap:12px;margin-top:8px">
+        <a href="#" aria-label="Términos">Términos</a>
+        <a href="#" aria-label="Privacidad">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

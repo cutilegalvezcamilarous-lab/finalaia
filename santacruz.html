@@ -1,0 +1,151 @@
+<!doctype html>        
+<html lang="es">        
+<head>        
+  <meta charset="utf-8" />        
+  <meta name="viewport" content="width=device-width,initial-scale=1" />        
+  <title>Turismo Bolivia — Santa Cruz</title>        
+  <meta name="description" content="Descubre Santa Cruz: modernidad, naturaleza y cultura oriental.">        
+  <style>        
+    :root{        
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);        
+      --radius:14px; --pad:18px;        
+    }        
+    *{box-sizing:border-box}        
+    body{        
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;        
+      background:linear-gradient(#007849 0%, white 50%, #007849 100%); color:#0f172a;        
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;        
+    }        
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:rgba(48, 148, 62, 0.6); border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}        
+    .container{max-width:1100px; margin:0 auto; padding:20px;}        
+    .nav{display:flex; align-items:center; justify-content:space-between;}        
+    .brand{font-weight:800; letter-spacing:-0.4px}        
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}        
+    .hero{ display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+    padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(#007849, white, #007849);}        
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}        
+    .hero p{margin:0; color:var(--muted)}        
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}        
+    .card{background:rgb(44, 114, 37); border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}        
+    .card img{width:100%; height:200px; object-fit:cover; display:block}        
+    .card-body{padding:14px}        
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}        
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}        
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}        
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}        
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}        
+    @media(min-width:720px){        
+      .hero{grid-template-columns:1fr 480px; padding:48px}        
+      .gallery{grid-template-columns:repeat(4,1fr)}        
+    }        
+  </style>        
+</head>        
+<body>        
+  <header>        
+    <div class="container nav">        
+      <div style="display:flex;align-items:center;gap:12px">        
+        <div class="brand">Santa Cruz</div>        
+        <div style="font-size:13px;color:var(--muted)">Moderna · Tropical · Progresista</div>        
+      </div>        
+      <nav>        
+        <a href="#lugares">Lugares</a>        
+        <a href="#consejos">Consejos</a>        
+        <a href="#galeria">Galería</a>        
+      </nav>        
+    </div>        
+  </header>            
+  <main class="container" style="padding-bottom:28px">               
+    <section class="hero" aria-labelledby="hero-title-santacruz">        
+      <div>        
+        <h1 id="hero-title-santacruz">Santa Cruz: corazón verde y motor de Bolivia</h1>        
+        <p>El departamento de Santa Cruz, ubicado en el oriente boliviano, es la región más grande y próspera del país. Con una mezcla única de modernidad urbana, paisajes tropicales y rica cultura camba, Santa Cruz es un destino lleno de vida, gastronomía y hospitalidad. Desde la ciudad moderna hasta sus parques naturales, ofrece experiencias inolvidables.</p>        
+        <div style="margin-top:12px">        
+          <a class="btn" href="#lugares">Ver lugares</a>        
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>        
+        </div>        
+      </div>        
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">        
+        <img src="img/SANTA CRUZ.jpg" alt="Santa Cruz de la Sierra" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">        
+      </div>        
+    </section>        
+<section id="lugares" style="margin-top:40px">        
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>        
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y atractivos de Santa Cruz.</p>        
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">                
+    <article class="card lugar" aria-label="Parque Nacional Amboró">        
+      <img src="img/AMBORO.jpg" alt="Parque Nacional Amboró">        
+      <div class="card-body">        
+        <h3 style="margin:0;font-size:20px;font-weight:700">Parque Nacional Amboró</h3>        
+        <p style="margin:6px 0;color:var(--muted)">Ubicado al oeste del departamento, este parque es un paraíso natural con una increíble biodiversidad. Sus montañas, ríos y cascadas lo convierten en uno de los destinos más visitados por los amantes de la naturaleza y la aventura.</p>        
+      </div>        
+    </article>               
+    <article class="card lugar" aria-label="Plaza 24 de Septiembre">        
+      <img src="img/PLAZA.jpg" alt="Plaza 24 de Septiembre">        
+      <div class="card-body">        
+        <h3 style="margin:0;font-size:20px;font-weight:700">Plaza 24 de Septiembre</h3>        
+        <p style="margin:6px 0;color:var(--muted)">Centro histórico y corazón de Santa Cruz de la Sierra. Rodeada de cafés, restaurantes y la majestuosa Catedral Metropolitana, es el punto de encuentro más emblemático de la ciudad.</p>        
+      </div>        
+    </article>              
+    <article class="card lugar" aria-label="Samaipata">        
+      <img src="img/SAMAIPATA.jpg" alt="Samaipata">        
+      <div class="card-body">        
+        <h3 style="margin:0;font-size:20px;font-weight:700">Samaipata</h3>        
+        <p style="margin:6px 0;color:var(--muted)">Este pintoresco pueblo colonial es conocido por El Fuerte, un sitio arqueológico declarado Patrimonio de la Humanidad. Rodeado de montañas, Samaipata combina historia, cultura y naturaleza.</p>        
+      </div>        
+    </article>               
+    <article class="card lugar" aria-label="Lomas de Arena">        
+      <img src="img/LOMAS.jpg" alt="Lomas de Arena">        
+      <div class="card-body">        
+        <h3 style="margin:0;font-size:20px;font-weight:700">Lomas de Arena</h3>        
+        <p style="margin:6px 0;color:var(--muted)">Un impresionante paisaje de dunas doradas cerca de la ciudad de Santa Cruz. Ideal para practicar sandboard, hacer picnic o disfrutar de atardeceres inolvidables.</p>        
+      </div>        
+    </article>               
+    <article class="card lugar" aria-label="Cotoca">        
+      <img src="img/COTOCA.jpg" alt="Cotoca">        
+      <div class="card-body">        
+        <h3 style="margin:0;font-size:20px;font-weight:700">Cotoca</h3>        
+        <p style="margin:6px 0;color:var(--muted)">Pueblo religioso famoso por su Santuario de la Virgen de Cotoca y su gastronomía tradicional, donde destacan las masitas, empanadas y cuñapés.</p>        
+      </div>        
+    </article>               
+    <article class="card lugar" aria-label="Buena Vista">        
+      <img src="img/BUENAVISTA.jpg" alt="Buena Vista">        
+      <div class="card-body">        
+        <h3 style="margin:0;font-size:20px;font-weight:700">Buena Vista</h3>        
+        <p style="margin:6px 0;color:var(--muted)">Ubicado a orillas del río Ichilo, es un destino turístico ideal para descansar y disfrutar de la selva tropical. Es reconocido por su producción de café y ecoturismo.</p>        
+      </div>        
+    </article>        
+  </div>        
+</section>        
+<div class="card" style="padding:16px">        
+    <h3 style="margin:0 0 8px">Consejos para visitar Santa Cruz</h3>        
+    <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">        
+      <li>El clima es cálido casi todo el año, lleva ropa ligera y cómoda.</li>        
+      <li>Prueba la gastronomía local: majadito, locro, sonso y masaco son imperdibles.</li>        
+      <li>Evita las horas de mayor sol; usa protector solar y sombrero.</li>        
+      <li>Respeta los espacios naturales y las tradiciones de las comunidades rurales.</li>        
+      <li>Si viajas en época de lluvias, revisa el estado de las carreteras antes de desplazarte.</li>        
+    </ul>        
+  </div>              
+<section id="galeria" style="margin-top:28px">        
+  <h3 style="margin:0 0 6px">Galería</h3>        
+  <p style="margin:0 0 12px;color:var(--muted)">Paisajes y lugares icónicos de Santa Cruz.</p>        
+  <div class="gallery" style="margin-top:8px">        
+    <img src="img/AMBORO.jpg" alt="Parque Nacional Amboró">        
+    <img src="img/PLAZA.jpg" alt="Plaza 24 de Septiembre">        
+    <img src="img/SAMAIPATA.jpg" alt="Samaipata">        
+    <img src="img/LOMAS.jpg" alt="Lomas de Arena">        
+    <img src="img/COTOCA.jpg" alt="Cotoca">        
+    <img src="img/BUENAVISTA.jpg" alt="Buena Vista">        
+  </div>        
+</section>          
+  <footer>        
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">        
+      <small>© <span id="year-santacruz"></span> Turismo Santa Cruz — Naturaleza y modernidad</small>        
+      <div style="display:flex;gap:12px;margin-top:8px">        
+        <a href="#" aria-label="Términos">Términos</a>        
+        <a href="#" aria-label="Privacidad">Privacidad</a>        
+      </div>        
+    </div>        
+  </footer>                
+</body>        
+</html>

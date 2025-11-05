@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Turismo Bolivia — Beni</title>
+  <meta name="description" content="Descubre Potosí: Cerro Rico, historia colonial y maravillas naturales.">
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --accent:#b91c1c; --muted:#6b7280; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --pad:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:#07a568; color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    header{position:sticky; top:0; backdrop-filter:blur(6px); background:#25da94; border-bottom:1px solid rgba(15,23,42,0.04); z-index:50;}
+    .container{max-width:1100px; margin:0 auto; padding:20px;}
+    .nav{display:flex; align-items:center; justify-content:space-between;}
+    .brand{font-weight:800; letter-spacing:-0.4px}
+    nav a{margin-left:14px; font-weight:600; color:#7f1d1d}
+    .hero{  display:grid; grid-template-columns:1fr; gap:18px; align-items:center;
+      padding:48px 20px; border-radius:18px; margin-top:18px; background:linear-gradient(#07a568, #388a6b);}
+    .hero h1{font-size:clamp(26px,6vw,42px); margin:0 0 6px; line-height:1.02}
+    .hero p{margin:0; color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;background:var(--accent);color:white;text-decoration:none}
+    .card{background:#245743; border-radius:12px; overflow:hidden; box-shadow: 0 6px 18px rgba(2,6,23,0.06); display:flex; flex-direction:column}
+    .card img{width:100%; height:200px; object-fit:cover; display:block}
+    .card-body{padding:14px}
+    .meta{font-size:13px;color:var(--muted); margin-top:6px}
+    footer{padding:28px 20px; color:var(--muted); margin-top:28px; text-align:center}
+    .gallery{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}
+    form input, form textarea{width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef0; margin-top:8px; font-size:14px;}
+    @media(min-width:720px){
+      .hero{grid-template-columns:1fr 480px; padding:48px}
+      .gallery{grid-template-columns:repeat(4,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="brand">Beni</div>
+        <div style="font-size:13px;color:var(--muted)">Natural · Calido · Amazonico</div>
+      </div>
+      <nav>
+        <a href="#lugares">Lugares</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" style="padding-bottom:28px">
+    <section class="hero" aria-labelledby="hero-title-potosi">
+      <div>
+        <h1 id="hero-title-potosi">Beni: biodiversidad amazónica a ras del cielo</h1>
+        <p>El departamento del Beni, ubicado al noreste de Bolivia, es una de las regiones más ricas en biodiversidad, cultura viva y paisajes naturales. A diferencia del altiplano andino, Beni se extiende en vastas llanuras, selvas tropicales y ríos caudalosos, a menos de 300 metros sobre el nivel del mar. Esta tierra cálida y fértil es un verdadero tesoro amazónico poco explorado por el turismo tradicional.</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="#lugares">Ver lugares</a>
+          <a class="btn" href="#galeria" style="background:transparent;color:var(--accent);border:1px solid rgba(15,23,42,0.06);margin-left:10px">Ver galería</a>
+        </div>
+      </div>
+      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.08)">
+        <img src="img/BENI.jpg" alt="Cerro Rico de Potosí" style="width:100%;height:100%;max-height:420px;object-fit:cover;display:block">
+      </div>
+    </section>
+<section id="lugares" style="margin-top:40px">
+  <h2 style="margin:0 0 6px;font-size:28px;font-weight:800">Lugares destacados</h2>
+  <p style="margin:0 0 18px;color:var(--muted);font-size:15px">Explora los sitios más emblemáticos y bellos de Beni.</p>
+  <div style="display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:20px">
+    <article class="card lugar" aria-label="Laguna Suárez">
+      <img src="img/SUAREZ.jpg" alt="Laguna Suárez">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Laguna Suárez</h3>
+        <p style="margin:6px 0;color:var(--muted)">La laguna Suárez es una laguna artificial amazónica de agua dulce, ubicada 5 km al sureste de la ciudad de Trinidad, en la provincia de Cercado del departamento del Beni, Bolivia. Tiene unas dimensiones de 4,4 km de largo por 1,8 km de ancho y una superficie de 6 km².</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Catedral de la Santísima Trinidad">
+      <img src="img/IGLESIA.jpg" alt="Catedral de la Santísima Trinidad">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Catedral de la Santísima Trinidad</h3>
+        <p style="margin:6px 0;color:var(--muted)">La Catedral de la Santísima Trinidad es un patrimonio cultural e histórico ubicado en la ciudad de Trinidad, capital del departamento del Beni, Bolivia. Situada en la acera sur de la plaza principal, esta catedral es la sede del Vicariato Apostólico del Beni, una jurisdicción eclesiástica de la Iglesia católica de rito latino.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Rurrenabaque Rurrenabaque">
+      <img src="img/NOSE.jpg" alt="Rurrenabaque Rurrenabaque">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Rurrenabaque Rurrenabaque</h3>
+        <p style="margin:6px 0;color:var(--muted)">Rurrenabaque es un pueblo pequeño en el río Beni, conocido por ser la entrada a los bosques tropicales y las pampas del norte de Bolivia. Cerca de la plaza principal de 2 de Febrero, se encuentra la parroquia de Nuestra Señora de la Candelaria. Un sendero lleva hacia el mirador La Cruz, desde el que se puede observar la ciudad. </p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Riberalta">
+      <img src="img/RIBERALTA.png" alt="Riberalta">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Riberalta</h3>
+        <p style="margin:6px 0;color:var(--muted)">Riberalta es una ciudad y municipio de Bolivia, capital y ciudad más poblada de la provincia de Vaca Díez dentro del departamento del Beni, ubicada al norte de la Amazonía boliviana. Es conocida a veces como la capital amazónica del país. </p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="San Ignacio de Moxos">
+      <img src="img/MOXOS.png" alt="San Ignacio de Moxos">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">San Ignacio de Moxos</h3>
+        <p style="margin:6px 0;color:var(--muted)">Esta es la capital folKlórica del Beni. Durante todo el año se pueden practicar deportes como natación, esquí acuático, pesca y senderismo. Este pueblo es famoso por su festival anual, en el que los habitantes se visten de toros y mamas y recorren las calles principales en devoción a San Ignacio.</p>
+      </div>
+    </article>
+    <article class="card lugar" aria-label="Santa Ana de Yacuma">
+      <img src="img/ANA.jpg" alt="Santa Ana de Yacuma">
+      <div class="card-body">
+        <h3 style="margin:0;font-size:20px;font-weight:700">Santa Ana de Yacuma</h3>
+        <p style="margin:6px 0;color:var(--muted)">Santa Ana de Yacuma es conocida como la capital ganadera del Beni, con verdes praderas aptas para la agricultura y la ganadería. La zona suburbana es un atractivo turístico gracias a sus ríos ideales para la pesca deportiva.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<div class="card" style="padding:16px">
+    <h3 style="margin:0 0 8px">Consejos para visitar Beni</h3>
+    <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">
+      <li>Lleva ropa ligera y fresca, ideal para clima tropical húmedo.</li>
+      <li>Usa repelente contra mosquitos, especialmente en zonas selváticas y ribereñas.</li>
+      <li>La temporada de lluvias puede afectar caminos; planifica tus desplazamientos con anticipación.</li>
+      <li>Respeta las costumbres de las comunidades indígenas si visitas sus territorios.</li>
+      <li>Hidrátate constantemente y protege tu piel del sol con bloqueador solar.</li>
+    </ul>
+  </div>
+</section>
+    <section id="galeria" style="margin-top:28px">
+      <h3 style="margin:0 0 6px">Galería</h3>
+      <p style="margin:0 0 12px;color:var(--muted)">Paisajes y monumentos de Beni.</p>
+      <div class="gallery" style="margin-top:8px">
+        <img src="img/SUAREZ.jpg" alt="Laguna Suárez">
+        <img src="img/IGLESIA.jpg" alt="Catedral de la Santísima Trinidad">
+        <img src="img/NOSE.jpg" alt="Rurrenabaque Rurrenabaque">
+        <img src="img/RIBERALTA.png" alt="Riberalta">
+        <img src="img/MOXOS.png" alt="San Ignacio de Moxos">
+        <img src="img/ANA.jpg" alt="Santa Ana de Yacuma">
+      </div>
+    </section>
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <small>© <span id="year-potosi"></span> Turismo La Paz — Historia y naturaleza</small>
+      <div style="display:flex;gap:12px;margin-top:8px">
+        <a href="#" aria-label="Términos">Términos</a>
+        <a href="#" aria-label="Privacidad">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
